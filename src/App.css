@@ -1,0 +1,11 @@
+nav{
+  background-color: violet;
+}
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+.Cardstyle{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
