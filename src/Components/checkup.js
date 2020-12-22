@@ -1,12 +1,12 @@
-import React from 'react';
- 
-const home = () => {
-    return (
-       <div>
-          <h1></h1>
-           <p>checkup page</p>
-       </div>
-    );
+import React,{Component} from 'react';
+import {Jumbotron,Container,Row,Col} from 'reactstrap';
+
+class Main extends Component{
+    render(){
+        return(
+          <h1>This is checkup page</h1>
+        );
+    }
 }
- 
-export default home;
+export default Main;
+
