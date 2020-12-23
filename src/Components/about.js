@@ -3,9 +3,9 @@ import {Container,Row,Col} from 'reactstrap'
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import image1 from '../Images/bhairavi.jpg';
 import image2 from '../Images/gautami.jpeg';
+import homesaftytips from '../Images/homesafetytips.jpg'
 
-
-import Image from 'react-bootstrap/Image' 
+import Image from 'react-bootstrap/Image' ;
 import teamimage from '../Images/team.jpg';
 import '../App.css';
 const Example = (props) => {
@@ -13,13 +13,15 @@ const Example = (props) => {
     <div>
 <Container>
 <Row style={{marginTop:"5%"}}>
-  <Col> <h3 style={{color:'blue'}}>Our Mission</h3>
+  <Col md={6} xs={12}> <h3 style={{color:'blue'}}>Our Mission</h3>
       <h5>
         The website is designed to detect the presence of parkinson's Diesease.
       </h5>
   </Col>
-  <Col>
-         <Image src={teamimage}  style={{borderRadius: 50 + 'px'}} alt="Card image cap" />
+  <Col md={6} xs={12}>
+      
+          <Image src={teamimage} style={{borderRadius: 50 + 'px'}} thumbnail />
+
   </Col>
  
 </Row>

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {Row,Col,Container} from 'reactstrap';
-import image1 from '../Images/image1.jpg'
+
 class Example extends Component{
     render(){
         return(

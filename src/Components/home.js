@@ -14,7 +14,7 @@ class Main extends Component{
 
                 <Row >
                   <Col xs={12} md={6}style={{ marginTop: "5%", marginBottom:"5%"}}>
-                     <h5>What is Parkinson's Diesease?</h5>
+                     <h5 style={{color:'#172D02 '}}>What is Parkinson's Diesease?</h5>
                     Parkinson's disease is one of the most common movement disorders. It occurs when the brain doesn't produce 
                     enough dopamine, a chemical that supports smooth, controlled muscle movement. This condition typically affects 
                     older adults but can also occur in people in their 30s or 40s.
