@@ -2,13 +2,17 @@ import React,{Component} from 'react';
 import {Jumbotron,Container,Row,Form,Col,Input,FormGroup,Button} from 'reactstrap';
 
 class Main extends Component{
+    submitHandler = (event) =>{
+      event.preventDefault();
+      alert("You are submitting");
+    }
     render(){
         return(
           <React.Fragment>
             <Container>
               <Row className="justify-content-center"><h5>Enter your medical details to check whether you have parkinsons or not</h5></Row>
               <Row className="justify-content-center">
-                <Form>
+                <Form onSubmit={this.submitHandler}>
                     <FormGroup row>
                         <Col><Input type="text" placeholder="MDVP:Fo(Hz)" id="MDVP_Fo"/></Col>
                         <Col><Input type="text" placeholder="MDVP:Fhi(Hz)" id="MDVP_Fhi"/></Col>
@@ -46,7 +50,7 @@ class Main extends Component{
                     </FormGroup>
                     <FormGroup row>
                         <Col><Input type="text" placeholder="PPE" id="PPE"/></Col>
-                        <Col><Button>Submit</Button></Col>
+                        <Col><Button type="submit">Submit</Button></Col>
                     </FormGroup>
                 </Form>
               </Row>
